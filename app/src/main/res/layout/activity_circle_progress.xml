@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:hcc="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context="com.cc.customview.progress.CircleProgressActivity">
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="start"
+        android:text="开始"
+        android:visibility="gone" />
+
+    <com.cc.customview.progress.CircleProgressView
+        android:id="@+id/progressView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        hcc:isAbove="true"
+        hcc:isScroll="true"
+        hcc:proTextColor="#FFFFFF"
+        hcc:proTextSize="30sp"
+        hcc:progressColor="@color/colorOrange"
+        hcc:progressWidth="5dp"
+        hcc:sectorColor="@color/colorAccent"
+        hcc:showStoke="true"
+        hcc:tipText="当前进度"
+        hcc:tipTextColor="#FFFFFF" />
+
+    <com.cc.customview.progress.CircleProgressView
+        android:id="@+id/progressView2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        hcc:isAbove="false"
+        hcc:isScroll="true"
+        hcc:max="100"
+        hcc:proTextColor="#FFFFFF"
+        hcc:proTextSize="30sp"
+        hcc:progressColor="@color/colorOrange"
+        hcc:progressWidth="5dp"
+        hcc:sectorColor="@color/colorAccent"
+        hcc:showStoke="false"
+        hcc:tipText="当前进度"
+        hcc:tipTextColor="#FFFFFF" />
+
+    <com.cc.customview.progress.CircleProgressView
+        android:id="@+id/progressView3"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        hcc:isAbove="false"
+        hcc:isScroll="true"
+        hcc:proTextColor="#FFFFFF"
+        hcc:proTextSize="30sp"
+        hcc:progressColor="@color/colorOrange"
+        hcc:progressWidth="5dp"
+        hcc:sectorColor="@color/colorAccent"
+        hcc:showStoke="true"
+        hcc:tipText="当前进度"
+        hcc:tipTextColor="#FFFFFF" />
+
+    <com.cc.customview.progress.PathView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>
