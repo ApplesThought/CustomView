@@ -12,7 +12,7 @@ import android.view.View;
  * Created by CC on 2017/7/3.
  */
 
-public class PathView extends View {
+public class PathView extends View {  
     private Paint mPaint;
 
     public PathView(Context context) {
